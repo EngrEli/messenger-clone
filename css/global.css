@@ -1,0 +1,7 @@
+:root {
+  --dark-text: #050505;
+}
+
+.side__header-chat-title {
+  font-family: 'SegoeReg', 'sans-serif';
+}
