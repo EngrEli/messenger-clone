@@ -5,7 +5,7 @@
 
 .side__header {
   padding: 10px 16px;
-  height: 46px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,11 +39,6 @@
   flex: 1;
   justify-content: space-around;
 }
-/* 
-.side__message-room-icon,
-.side__new-chat-icon {
-  width: 36px;
-} */
 
 .side__message-room-icon,
 .side__new-chat-icon {
@@ -59,4 +54,47 @@
 .side__new-chat-icon:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Search bar */
+.side__search-bar {
+  padding: 6px 16px 12px;
+  position: relative;
+}
+
+.side__search-bar input {
+  width: 100%;
+  border-radius: 50px;
+  color: #1C1E21;
+  height: 36px;
+  border: 0;
+  background-color: #F0F2F5;
+  padding: 7px 6px 7px 31px;
+}
+
+.side__search-bar input:focus {
+  outline: none;
+}
+
+.side__search-bar input::-webkit-input-placeholder { /* Edge */
+  font-size: .9375rem;
+}
+
+.side__search-bar input:-ms-input-placeholder { /* Internet Explorer */
+  font-size: .9375rem;
+}
+
+.side__search-bar input::placeholder {
+  font-size: .9375rem;
+}
+
+.side__search-icon svg path {
+  fill: #65676B;
+}
+
+.side__search-icon {
+  position: absolute;
+  position: absolute;
+  top: 16px;
+  left: 25px;
 }
