@@ -25,6 +25,7 @@
 .side__header-user-pic {
   height: 36px;
   width: 36px;
+  cursor: pointer;
 }
 
 .side__header-user-pic img {
@@ -36,10 +37,26 @@
 .side__header-icons {
   display: flex;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
-
+/* 
 .side__message-room-icon,
 .side__new-chat-icon {
   width: 36px;
+} */
+
+.side__message-room-icon,
+.side__new-chat-icon {
+  border-radius: 50%;
+  display: flex;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.side__message-room-icon:hover,
+.side__new-chat-icon:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
 }

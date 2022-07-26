@@ -3,6 +3,10 @@ body {
   min-height: 100vh;
 }
 
+.chat-clone * {
+  box-sizing: border-box;
+}
+
 .chat-clone {
   display: flex;
 }
