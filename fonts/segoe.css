@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: 'SegoeSemiBold';
+  src: url('./SegoeSemiBold.ttf');
+}
+
+@font-face {
   font-family: 'SegoeBold';
   src: url('./SegoeBold.ttf');
 }

@@ -1,7 +1,10 @@
 :root {
   --dark-text: #050505;
+  --grey-text: #65676B;
+  --message-interact-bg: rgba(0, 0, 0, 0.04);
+  --accent: #0099FF;
 }
 
-.side__header-chat-title {
+.chat-clone * {
   font-family: 'SegoeReg', 'sans-serif';
 }
