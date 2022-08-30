@@ -42,7 +42,7 @@
       </div>
       <div class="side__inbox">
         <!-- Message 1 -->
-        <div class="side__inbox-message-container">
+        <div class="side__inbox-message-container side__inbox-message-container--seen">
           <div class="side__inbox-pic">
             <img src="./image/inboxPic1.jpg" alt="User Profile Picture">
           </div>
@@ -57,11 +57,14 @@
               </div>
             </div>
           </div>
-          <div class="side__inbox-message-status side__inbox-message-status--seen"></div>
+          <div class="side__inbox-message-status"></div>
+          <div class="side__inbox-options-hover">
+            <span class="side__inbox-options-hover-icon"></span>
+          </div>
         </div>
         <!-- // Message 1 -->
         <!-- Message 2 -->
-        <div class="side__inbox-message-container side__inbox-message-container--selected">
+        <div class="side__inbox-message-container side__inbox-message-container--delivered side__inbox-message-container--selected">
           <div class="side__inbox-pic">
             <img src="./image/inboxPic2.jpg" alt="User Profile Picture">
           </div>
@@ -76,11 +79,14 @@
               </div>
             </div>
           </div>
-          <div class="side__inbox-message-status side__inbox-message-status--delivered"></div>
+          <div class="side__inbox-message-status side__inbox-message-status"></div>
+          <div class="side__inbox-options-hover">
+            <span class="side__inbox-options-hover-icon"></span>
+          </div>
         </div>
         <!-- // Message 2 -->
         <!-- Message 3 -->
-        <div class="side__inbox-message-container">
+        <div class="side__inbox-message-container side__inbox-message-container--unread">
           <div class="side__inbox-pic">
             <img src="./image/inboxPic3.jpg" alt="User Profile Picture">
           </div>
@@ -89,15 +95,40 @@
               <div class="side__inbox-message-name">
                 Overflow testing. Overflow testing. Overflow
               </div>
-              <div class="side__inbox-message-preview side__inbox-message-preview--unread">
-                Hoy putangina mo!
+              <div class="side__inbox-message-preview">
+                Hoy!
                 <span> · 2d</span>
               </div>
             </div>
           </div>
-          <div class="side__inbox-message-status side__inbox-message-status--unread"></div>
+          <div class="side__inbox-message-status"></div>
+          <div class="side__inbox-options-hover">
+            <span class="side__inbox-options-hover-icon"></span>
+          </div>
         </div>
         <!-- // Message 3 -->
+        <!-- Message 4 -->
+        <div class="side__inbox-message-container side__inbox-message-container--user-seen">
+          <div class="side__inbox-pic">
+            <img src="./image/inboxPic4.jpg" alt="User Profile Picture">
+          </div>
+          <div class="side__inbox-message-flex">
+            <div class="side__inbox-message-flex">
+              <div class="side__inbox-message-name">
+                Hulk Smash
+              </div>
+              <div class="side__inbox-message-preview">
+                Good night :(
+                <span> · 3d</span>
+              </div>
+            </div>
+          </div>
+          <div class="side__inbox-message-status"></div>
+          <div class="side__inbox-options-hover">
+            <span class="side__inbox-options-hover-icon"></span>
+          </div>
+        </div>
+        <!-- // Message 4 -->
       </div>
     </div>
     <div class="chat-main"></div>

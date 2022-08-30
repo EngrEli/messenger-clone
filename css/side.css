@@ -154,19 +154,24 @@
   min-height: 20px;
   line-height: 20px;
   margin-bottom: 4px;
-  font-family: 'SegoeBold', 'sans-serif';
+  font-family: 'SegoeSemiBold', 'sans-serif';
   width: 225px;
   overflow-x: hidden;
+}
+
+/* Unread status */
+.side__inbox-message-container--unread .side__inbox-message-name {
+  font-family: 'SegoeBold', 'sans-serif';
+}
+
+.side__inbox-message-container--unread .side__inbox-message-preview {
+  font-family: 'SegoeBold', 'sans-serif';
+  color: var(--dark-text);
 }
 
 .side__inbox-message-preview {
   color: var(--grey-text);
   font-size: 13px;
-}
-
-.side__inbox-message-preview--unread {
-  font-family: 'SegoeBold', 'sans-serif';
-  color: var(--dark-text);
 }
 
 .side__inbox-message-status {
@@ -179,19 +184,74 @@
   border-radius: 50%;
 }
 
-.side__inbox-message-status--seen {
+/* Seen Status */
+.side__inbox-message-container--seen .side__inbox-message-status {
   background-image: url('../image/inboxPic1.jpg');
   background-size: cover;
 }
 
-.side__inbox-message-status--delivered {
+/* Delivered Status */
+.side__inbox-message-container--delivered .side__inbox-message-status {
   background-color: #FFFFFF;
   background-image: url('../image/icons/deliveredIcon.svg');
 }
 
-.side__inbox-message-status--unread {
+/* Unread status */
+.side__inbox-message-container--unread .side__inbox-message-status {
   background-color: var(--accent);
   width: 12px;
   height: 12px;
   right: 12px;
+}
+
+/* User seen status */
+.side__inbox-message-container--user-seen .side__inbox-message-status {
+  display: none;
+}
+
+.side__inbox-option-circle {
+  width: 32px;
+  height: 32px;
+  background-color: red;
+}
+
+.side__inbox-message-container:hover .side__inbox-options-hover {
+  display: block;
+}
+
+.side__inbox-options-hover {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px var(--shadow);
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.side__inbox-options-hover:hover {
+  background-color: #F5F5F5;
+}
+
+.side__inbox-options-hover:hover .side__inbox-message-container {
+  background-color: none;
+}
+
+.side__inbox-options-hover-icon {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/drFcdzumgZ9.png?_nc_eui2=AeFnjJ7HKl3U_T7qZqcLlDwXHmP6XLpfU-keY_pcul9T6dCXgNHAw_QIMvzHopmvSsKKo46VwPLam7PGndLs8nP7);
+  background-position: 0px -1313px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  color: var(--grey-text);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: invert(39%) sepia(21%) saturate(200%) saturate(109.5%) hue-rotate(174deg) brightness(94%) contrast(86%);
 }
