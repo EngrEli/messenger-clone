@@ -7,4 +7,22 @@
   height: 56px;
   box-shadow: 0 0 4px var(--shadow-2);
   padding: 10px 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-main__header-profile-pic {
+  width: 36px;
+  height: 36px;
+}
+
+.chat-main__header-profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat-main__header-left {
+  display: flex;
+  align-items: center;
 }
