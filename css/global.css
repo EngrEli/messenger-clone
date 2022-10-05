@@ -4,6 +4,7 @@
   --message-interact-bg: rgba(0, 0, 0, 0.04);
   --accent: #0099FF;
   --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-2: rgba(0, 0, 0, 0.2);
 }
 
 .chat-clone * {

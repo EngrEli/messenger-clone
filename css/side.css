@@ -1,11 +1,12 @@
 .side {
   width: 360px;
   height: 100%;
+  border-right: 1px solid var(--shadow);
 }
 
 .side__header {
   padding: 10px 16px;
-  height: 50px;
+  height: 53px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,8 +18,8 @@
   text-align: center;
   padding: 0 10px;
   font-size: 15px;
-  font-weight: 600;
   margin-left: 40px;
+  font-family: 'SegoeSemiBold', 'sans-serif';
   color: var(--dark-text);
 }
 
@@ -155,7 +156,7 @@
   line-height: 20px;
   margin-bottom: 4px;
   font-family: 'SegoeSemiBold', 'sans-serif';
-  width: 225px;
+  max-width: 225px;
   overflow-x: hidden;
 }
 
@@ -164,7 +165,7 @@
   font-family: 'SegoeBold', 'sans-serif';
 }
 
-.side__inbox-message-container--unread .side__inbox-message-preview {
+.side__inbox-message-container--unread .side__inbox-message-preview-text {
   font-family: 'SegoeBold', 'sans-serif';
   color: var(--dark-text);
 }
@@ -172,6 +173,27 @@
 .side__inbox-message-preview {
   color: var(--grey-text);
   font-size: 13px;
+  max-width: 225px;
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+
+.side__inbox-message-preview-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 17px;
+  line-height: 17px;
+  max-width: 203px;
+  display: inline-block;
+  padding-right: 7px;
+}
+
+.side__inbox-message-preview-time {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .side__inbox-message-status {

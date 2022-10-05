@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/side.css">
+  <link rel="stylesheet" href="css/mainChat.css">
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/63dc67363d.js" crossorigin="anonymous"></script>
 </head>
@@ -52,9 +53,15 @@
                 Eli Lumilay
               </div>
               <div class="side__inbox-message-preview">
+                <div class="side__inbox-message-preview-text">
+                  You: Hello, good morning. May you have a nice day ahead.
+                </div>
+                <span class="side__inbox-message-preview-time"> · 7h</span>
+              </div>
+              <!-- <div class="side__inbox-message-preview">
                 You: Hello, good morning.
                 <span> · 7h</span>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="side__inbox-message-status"></div>
@@ -74,9 +81,15 @@
                 Overflow testing. Overflow testing. Overflow
               </div>
               <div class="side__inbox-message-preview">
+                <div class="side__inbox-message-preview-text">
+                  You: Hello, good morning. Testing... Testinggggg.
+                </div>
+                <span class="side__inbox-message-preview-time"> · 8h</span>
+              </div>
+              <!-- <div class="side__inbox-message-preview">
                 You: Hello, good morning.
                 <span> · 7h</span>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="side__inbox-message-status side__inbox-message-status"></div>
@@ -96,9 +109,15 @@
                 Overflow testing. Overflow testing. Overflow
               </div>
               <div class="side__inbox-message-preview">
+                <div class="side__inbox-message-preview-text">
+                  TestttttttttTestttttttttTestttttttttTestttttttttTestttttttttTestttttttttTesttttttttt
+                </div>
+                <span class="side__inbox-message-preview-time"> · 2d</span>
+              </div>
+              <!-- <div class="side__inbox-message-preview">
                 Hoy!
                 <span> · 2d</span>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="side__inbox-message-status"></div>
@@ -118,9 +137,15 @@
                 Hulk Smash
               </div>
               <div class="side__inbox-message-preview">
+                <div class="side__inbox-message-preview-text">
+                  Good night :(
+                </div>
+                <span class="side__inbox-message-preview-time"> · 3d</span>
+              </div>
+              <!-- <div class="side__inbox-message-preview">
                 Good night :(
                 <span> · 3d</span>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="side__inbox-message-status"></div>
@@ -131,8 +156,20 @@
         <!-- // Message 4 -->
       </div>
     </div>
-    <div class="chat-main"></div>
+    <div class="chat-main">
+      <div class="chat-main__header">
+        <div class="chat-main__header-profile-pic">
+          <img src="" alt="">
+        </div>
+        <div class="chat-main__header-name">Name</div>
+        <div class="chat-main__header-icons">
+
+        </div>
+      </div>
+    </div>
     <div class="options"></div>
   </div>
+
+  <script src="./js/inboxOptions.js"></script>
 </body>
 </html>

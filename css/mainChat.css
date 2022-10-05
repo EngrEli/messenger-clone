@@ -1,0 +1,10 @@
+.chat-main {
+  flex: 1;
+}
+
+.chat-main__header {
+  min-height: 56px;
+  height: 56px;
+  box-shadow: 0 0 4px var(--shadow-2);
+  padding: 10px 6px;
+}

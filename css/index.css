@@ -1,10 +1,12 @@
-html,
+
+
 body {
-  min-height: 100vh;
+
 }
 
 .chat-clone * {
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 
 .chat-clone {
